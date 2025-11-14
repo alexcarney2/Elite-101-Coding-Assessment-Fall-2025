@@ -40,7 +40,7 @@ class Book:
 
 class Library:
     def __init__(self):
-        # Convert dictionary data into Book objects
+        # Convert dictionary into Book objects
         self.books = [Book(**book) for book in library_books]
 
     def find_book(self, book_id):
